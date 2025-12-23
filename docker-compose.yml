@@ -12,9 +12,10 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=3000
-    # Si necesitas variables de entorno adicionales, descomenta y añádelas aquí:
-    # env_file:
-    #   - .env.production
+      # Descomenta y configura para enviar emails:
+      - RESEND_API_KEY=${RESEND_API_KEY}    
+    env_file:
+      - .env.production
     networks:
       - proxy        
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { ContactForm } from "@/components/contact-form"
 import { Mail, Phone, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -44,75 +44,7 @@ export default function ContactoPage() {
               <div className="lg:col-span-2">
                 <Card className="border-border bg-card">
                   <CardContent className="pt-6">
-                    <form className="space-y-6">
-                      <div>
-                        <label htmlFor="nombre" className="block text-sm font-medium text-foreground mb-2">
-                          Nombre *
-                        </label>
-                        <input
-                          type="text"
-                          id="nombre"
-                          name="nombre"
-                          required
-                          className="w-full px-4 py-2 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                          placeholder="Tu nombre completo"
-                        />
-                      </div>
-
-                      <div>
-                        <label htmlFor="empresa" className="block text-sm font-medium text-foreground mb-2">
-                          Empresa *
-                        </label>
-                        <input
-                          type="text"
-                          id="empresa"
-                          name="empresa"
-                          required
-                          className="w-full px-4 py-2 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                          placeholder="Nombre de tu empresa"
-                        />
-                      </div>
-
-                      <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                          Email *
-                        </label>
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          required
-                          className="w-full px-4 py-2 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                          placeholder="tu@empresa.com"
-                        />
-                      </div>
-
-                      <div>
-                        <label htmlFor="mensaje" className="block text-sm font-medium text-foreground mb-2">
-                          Mensaje *
-                        </label>
-                        <textarea
-                          id="mensaje"
-                          name="mensaje"
-                          required
-                          rows={6}
-                          className="w-full px-4 py-2 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
-                          placeholder="Cuéntanos qué procesos quieres mejorar o qué desafíos enfrenta tu empresa..."
-                        />
-                      </div>
-
-                      <div className="text-xs text-muted-foreground leading-relaxed">
-                        Al enviar este formulario, aceptas que tratemos tus datos conforme a nuestra{" "}
-                        <a href="/privacidad" className="text-accent hover:underline">
-                          Política de Privacidad
-                        </a>
-                        . Cumplimos con el RGPD y nunca compartiremos tu información con terceros.
-                      </div>
-
-                      <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                        Enviar solicitud
-                      </Button>
-                    </form>
+                    <ContactForm />
                   </CardContent>
                 </Card>
               </div>

@@ -61,14 +61,26 @@ Una vez ejecutado, la aplicación estará disponible en:
 
 ## Variables de entorno
 
-Si necesitas añadir variables de entorno, crea un archivo `.env.production`:
+Para que el formulario de contacto envíe emails, necesitas configurar Resend:
+
+1. Crea una cuenta gratuita en [resend.com](https://resend.com)
+2. Obtén tu API key
+3. Crea un archivo `.env.production`:
 
 ```env
 NODE_ENV=production
 PORT=3000
+RESEND_API_KEY=re_tu_clave_aqui
 ```
 
-Y descomenta la sección `env_file` en `docker-compose.yml`.
+4. Descomenta la sección `env_file` en `docker-compose.yml`
+
+**Alternativa:** Configura la variable directamente en Docker:
+```bash
+docker run -d -p 3000:3000 -e RESEND_API_KEY=re_tu_clave_aqui --name riber-digital-web riber-digital-web
+```
+
+**Nota:** Sin configurar RESEND_API_KEY, el formulario seguirá funcionando pero solo registrará los mensajes en los logs del contenedor.
 
 ## Actualización
 
