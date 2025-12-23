@@ -16,16 +16,7 @@ services:
     # env_file:
     #   - .env.production
     networks:
-      - riber-network
-    # Limitar recursos (opcional)
-    deploy:
-      resources:
-        limits:
-          cpus: '1'
-          memory: 512M
-        reservations:
-          cpus: '0.5'
-          memory: 256M
+      - riber-network        
 
 networks:
   riber-network:
