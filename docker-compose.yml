@@ -16,8 +16,8 @@ services:
     # env_file:
     #   - .env.production
     networks:
-      - riber-network        
+      - proxy        
 
 networks:
-  riber-network:
-    driver: bridge
+  proxy:
+    external: true
