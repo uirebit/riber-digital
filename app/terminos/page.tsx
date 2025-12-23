@@ -15,7 +15,7 @@ export default function TerminosPage() {
         <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">Términos y Condiciones</h1>
-            <p className="text-muted-foreground">Última actualización: {new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            <p className="text-muted-foreground">Última actualización: 23 de diciembre de 2025</p>
           </div>
         </section>
 

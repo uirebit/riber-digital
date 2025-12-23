@@ -3,12 +3,13 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { X } from "lucide-react"
 
 export function CookieBanner() {
   const [showBanner, setShowBanner] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     // Verificar si el usuario ya aceptó o rechazó las cookies
     const cookieConsent = localStorage.getItem("cookieConsent")
     if (!cookieConsent) {
@@ -26,7 +27,8 @@ export function CookieBanner() {
     setShowBanner(false)
   }
 
-  if (!showBanner) return null
+  // No renderizar nada hasta que el componente esté montado en el cliente
+  if (!mounted || !showBanner) return null
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-card border-t border-border shadow-lg">

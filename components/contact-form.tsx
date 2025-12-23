@@ -16,7 +16,8 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
     setLoading(true)
     setMessage(null)
 
-    const formData = new FormData(e.currentTarget)
+    const form = e.currentTarget
+    const formData = new FormData(form)
     const data = {
       nombre: formData.get('nombre') as string,
       empresa: formData.get('empresa') as string,
@@ -33,16 +34,19 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
         body: JSON.stringify(data),
       })
 
-      const result = await response.json()
-
-      if (response.ok) {
-        setMessage({ type: 'success', text: '¡Mensaje enviado correctamente! Te responderemos en breve.' })
-        e.currentTarget.reset()
-        onSuccess?.()
-      } else {
+      if (!response.ok) {
+        const result = await response.json().catch(() => ({ error: 'Error en el servidor' }))
         setMessage({ type: 'error', text: result.error || 'Error al enviar el mensaje' })
+        setLoading(false)
+        return
       }
+
+      const result = await response.json()
+      setMessage({ type: 'success', text: '¡Mensaje enviado correctamente! Te responderemos en breve.' })
+      form.reset()
+      onSuccess?.()
     } catch (error) {
+      console.error('Error en el formulario:', error)
       setMessage({ type: 'error', text: 'Error de conexión. Por favor, intenta de nuevo.' })
     } finally {
       setLoading(false)
