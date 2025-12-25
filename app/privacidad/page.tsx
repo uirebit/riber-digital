@@ -5,6 +5,13 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Política de Privacidad | Riberdigital",
   description: "Política de Privacidad de Riberdigital - Consultoría Digital",
+  alternates: {
+    canonical: '/privacidad',
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 }
 
 export default function PrivacidadPage() {

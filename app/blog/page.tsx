@@ -16,9 +16,13 @@ export const metadata: Metadata = {
     "casos uso IA empresas",
     "blog consultoría digital España",
   ],
+  alternates: {
+    canonical: '/blog',
+  },
   openGraph: {
     title: "Blog de Consultoría Digital | Riberdigital",
     description: "Guías prácticas sobre automatización, digitalización e IA para PYMEs en España.",
+    url: 'https://www.riberdigital.es/blog',
   },
 }
 

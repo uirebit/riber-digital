@@ -10,10 +10,14 @@ export const metadata: Metadata = {
   title: "Riberdigital | Consultoría Digital para PYMEs - Automatización y Digitalización en España",
   description:
     "Consultoría digital especializada en automatización de procesos y transformación digital para PYMEs españolas. Reduce costes, ahorra tiempo y mejora la eficiencia con soluciones prácticas de Riberdigital.",
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: "Riberdigital | Consultoría Digital para PYMEs en España",
     description:
       "Automatización de procesos, digitalización empresarial e IA para PYMEs. Consultoría práctica y resultados medibles.",
+    url: 'https://www.riberdigital.es',
   },
 }
 

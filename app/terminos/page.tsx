@@ -5,6 +5,13 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Términos y Condiciones | Riberdigital",
   description: "Términos y Condiciones de uso de Riberdigital - Consultoría Digital",
+  alternates: {
+    canonical: '/terminos',
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 }
 
 export default function TerminosPage() {

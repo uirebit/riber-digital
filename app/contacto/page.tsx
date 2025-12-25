@@ -15,9 +15,13 @@ export const metadata: Metadata = {
     "consultor digital contacto",
     "solicitar consultoría automatización",
   ],
+  alternates: {
+    canonical: '/contacto',
+  },
   openGraph: {
     title: "Contacta con Riberdigital | Consultoría Digital",
     description: "Asesoría gratuita para digitalizar y automatizar tu PYME. Respuesta en 24 horas.",
+    url: 'https://www.riberdigital.es/contacto',
   },
 }
 

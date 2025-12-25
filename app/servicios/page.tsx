@@ -19,10 +19,14 @@ export const metadata: Metadata = {
     "desarrollo software a medida",
     "consultor digital España",
   ],
+  alternates: {
+    canonical: '/servicios',
+  },
   openGraph: {
     title: "Servicios de Consultoría Digital para PYMEs | Riberdigital",
     description:
       "Automatización, digitalización, IA y desarrollo a medida para empresas españolas. Soluciones prácticas con resultados medibles.",
+    url: 'https://www.riberdigital.es/servicios',
   },
 }
 

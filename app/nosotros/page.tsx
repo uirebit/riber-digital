@@ -17,10 +17,14 @@ export const metadata: Metadata = {
     "empresa transformación digital pymes",
     "consultores digitales España",
   ],
+  alternates: {
+    canonical: '/nosotros',
+  },
   openGraph: {
     title: "Quiénes Somos | Riberdigital Consultoría Digital",
     description:
       "Tu socio en transformación digital. Ayudamos a PYMEs españolas a automatizar procesos y crecer de forma sostenible.",
+    url: 'https://www.riberdigital.es/nosotros',
   },
 }
 

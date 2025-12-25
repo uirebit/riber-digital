@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://riberdigital.es' // Actualiza con tu dominio real
+  const baseUrl = 'https://www.riberdigital.es'
   
   return [
     {
