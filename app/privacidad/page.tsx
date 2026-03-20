@@ -3,7 +3,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Política de Privacidad | Riberdigital",
+  title: "Política de Privacidad",
   description: "Política de Privacidad de Riberdigital - Consultoría Digital",
   alternates: {
     canonical: '/privacidad',

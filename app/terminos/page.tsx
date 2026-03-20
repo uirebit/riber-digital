@@ -3,7 +3,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Términos y Condiciones | Riberdigital",
+  title: "Términos y Condiciones",
   description: "Términos y Condiciones de uso de Riberdigital - Consultoría Digital",
   alternates: {
     canonical: '/terminos',

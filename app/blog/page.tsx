@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Blog de Digitalización y Automatización para PYMEs | Riberdigital",
+  title: "Blog - Digitalización y Automatización para PYMEs",
   description:
     "Artículos sobre consultoría digital, automatización de procesos, inteligencia artificial y casos prácticos para PYMEs españolas. Guías y consejos de digitalización empresarial por Riberdigital.",
   keywords: [

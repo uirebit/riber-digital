@@ -7,7 +7,9 @@ import { ArrowRight, Zap, Target, TrendingUp, CheckCircle2 } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Riberdigital | Consultoría Digital para PYMEs - Automatización y Digitalización en España",
+  title: {
+    absolute: "Riberdigital | Consultoría Digital para PYMEs en España",
+  },
   description:
     "Consultoría digital especializada en automatización de procesos y transformación digital para PYMEs españolas. Reduce costes, ahorra tiempo y mejora la eficiencia con soluciones prácticas de Riberdigital.",
   alternates: {

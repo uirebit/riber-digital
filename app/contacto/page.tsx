@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/contact-form"
 import { Mail, Phone, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Contacto | Consultoría Digital Personalizada para tu PYME - Riberdigital",
+  title: "Contacto - Asesoría Digital para PYMEs",
   description:
     "Solicita asesoría de consultoría digital para tu empresa en España. Análisis gratuito de procesos y propuesta personalizada de automatización y digitalización. Contacta con Riberdigital hoy.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: '/contacto',
   },
   openGraph: {
-    title: "Contacta con Riberdigital | Consultoría Digital",
+    title: "Contacta con Riberdigital",
     description: "Asesoría gratuita para digitalizar y automatizar tu PYME. Respuesta en 24 horas.",
     url: 'https://www.riberdigital.es/contacto',
   },

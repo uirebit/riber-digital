@@ -8,7 +8,7 @@ import { Target, Users, Lightbulb, Award, ArrowRight } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Quiénes Somos | Riberdigital - Consultoría Digital para PYMEs en España",
+  title: "Quiénes Somos - Consultoría Digital para PYMEs",
   description:
     "Conoce a Riberdigital, tu consultor digital de confianza. Especialistas en automatización de procesos, digitalización empresarial e IA para pequeñas y medianas empresas españolas. Transformación digital práctica y resultados medibles.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: '/nosotros',
   },
   openGraph: {
-    title: "Quiénes Somos | Riberdigital Consultoría Digital",
+    title: "Quiénes Somos | Riberdigital",
     description:
       "Tu socio en transformación digital. Ayudamos a PYMEs españolas a automatizar procesos y crecer de forma sostenible.",
     url: 'https://www.riberdigital.es/nosotros',

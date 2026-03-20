@@ -7,7 +7,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Servicios de Consultoría Digital | Automatización e IA para PYMEs - Riberdigital",
+  title: "Servicios de Consultoría Digital para PYMEs",
   description:
     "Servicios de consultoría digital en España: automatización de procesos empresariales, digitalización, integraciones de sistemas, soluciones de IA y desarrollo a medida. Mejora la eficiencia de tu PYME con Riberdigital.",
   keywords: [

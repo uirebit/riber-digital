@@ -10,7 +10,10 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.riberdigital.es'),
-  title: "Riberdigital | Consultoría Digital y Automatización para PYMEs en España",
+  title: {
+    default: "Riberdigital | Consultoría Digital para PYMEs en España",
+    template: "%s | Riberdigital",
+  },
   description:
     "Consultoría digital especializada en automatización de procesos, digitalización empresarial e inteligencia artificial para pequeñas y medianas empresas en España. Mejora la eficiencia de tu negocio con Riberdigital.",
   keywords: [
