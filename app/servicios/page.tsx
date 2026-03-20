@@ -8,8 +8,7 @@ import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Servicios de Consultoría Digital para PYMEs",
-  description:
-    "Servicios de consultoría digital en España: automatización de procesos empresariales, digitalización, integraciones de sistemas, soluciones de IA y desarrollo a medida. Mejora la eficiencia de tu PYME con Riberdigital.",
+  description: "Automatización de procesos, digitalización, integraciones de sistemas, IA y desarrollo a medida para PYMEs españolas. Soluciones prácticas con resultados medibles.",
   keywords: [
     "servicios consultoría digital",
     "automatización procesos empresariales",

@@ -14,8 +14,7 @@ export const metadata: Metadata = {
     default: "Riberdigital | Consultoría Digital para PYMEs en España",
     template: "%s | Riberdigital",
   },
-  description:
-    "Consultoría digital especializada en automatización de procesos, digitalización empresarial e inteligencia artificial para pequeñas y medianas empresas en España. Mejora la eficiencia de tu negocio con Riberdigital.",
+  description: "Consultoría digital para PYMEs en España. Automatizamos procesos, digitalizamos empresas e implementamos IA para mejorar la eficiencia de tu negocio.",
   keywords: [
     "consultoría digital España",
     "automatización de procesos para pymes",

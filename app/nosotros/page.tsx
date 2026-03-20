@@ -9,8 +9,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Quiénes Somos - Consultoría Digital para PYMEs",
-  description:
-    "Conoce a Riberdigital, tu consultor digital de confianza. Especialistas en automatización de procesos, digitalización empresarial e IA para pequeñas y medianas empresas españolas. Transformación digital práctica y resultados medibles.",
+  description: "Conoce a Riberdigital, especialistas en automatización y digitalización para PYMEs. Transformación digital práctica con resultados medibles para tu empresa.",
   keywords: [
     "riberdigital quienes somos",
     "consultoría digital España",

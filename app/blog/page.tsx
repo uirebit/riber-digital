@@ -7,8 +7,7 @@ import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Blog - Digitalización y Automatización para PYMEs",
-  description:
-    "Artículos sobre consultoría digital, automatización de procesos, inteligencia artificial y casos prácticos para PYMEs españolas. Guías y consejos de digitalización empresarial por Riberdigital.",
+  description: "Artículos sobre automatización, digitalización e IA para PYMEs. Guías prácticas y casos de uso de transformación digital para empresas españolas.",
   keywords: [
     "blog digitalización empresas",
     "automatización para pymes",

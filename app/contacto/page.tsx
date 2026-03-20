@@ -7,8 +7,7 @@ import { Mail, Phone, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Contacto - Asesoría Digital para PYMEs",
-  description:
-    "Solicita asesoría de consultoría digital para tu empresa en España. Análisis gratuito de procesos y propuesta personalizada de automatización y digitalización. Contacta con Riberdigital hoy.",
+  description: "Solicita asesoría gratuita de consultoría digital. Análisis de procesos y propuesta personalizada de automatización para tu PYME. Respuesta en 24 horas.",
   keywords: [
     "consultoría digital España contacto",
     "asesoría digitalización pymes",

@@ -10,8 +10,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Riberdigital | Consultoría Digital para PYMEs en España",
   },
-  description:
-    "Consultoría digital especializada en automatización de procesos y transformación digital para PYMEs españolas. Reduce costes, ahorra tiempo y mejora la eficiencia con soluciones prácticas de Riberdigital.",
+  description: "Consultoría digital para PYMEs en España. Automatizamos y digitalizamos tus procesos para reducir costes, ahorrar tiempo y mejorar la eficiencia.",
   alternates: {
     canonical: '/',
   },
