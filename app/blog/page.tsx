@@ -102,8 +102,8 @@ export default function BlogPage() {
                     <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">{post.excerpt}</p>
                     <div className="flex items-center justify-between pt-4 border-t border-border">
                       <span className="text-sm text-muted-foreground">{post.date}</span>
-                      <Button variant="ghost" size="sm" className="text-accent hover:text-accent/80">
-                        Leer más <ArrowRight className="ml-1" size={16} />
+                      <Button variant="ghost" size="sm" className="text-accent hover:text-accent/80" aria-label={`Leer artículo: ${post.title}`}>
+                        Leer artículo <ArrowRight className="ml-1" size={16} />
                       </Button>
                     </div>
                   </CardContent>

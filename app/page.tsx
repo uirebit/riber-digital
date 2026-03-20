@@ -108,8 +108,8 @@ export default function HomePage() {
                     Ahorra tiempo y reduce errores automatizando tareas rutinarias: facturación, reportes,
                     notificaciones y más
                   </p>
-                  <Link href="/servicios" className="text-accent hover:underline inline-flex items-center">
-                    Saber más <ArrowRight className="ml-1" size={16} />
+                  <Link href="/servicios#automatizacion" className="text-accent hover:underline inline-flex items-center">
+                    Ver automatización de procesos <ArrowRight className="ml-1" size={16} />
                   </Link>
                 </CardContent>
               </Card>
@@ -120,8 +120,8 @@ export default function HomePage() {
                   <p className="text-muted-foreground mb-4 leading-relaxed">
                     Conecta tu ERP, CRM, Excel y otras herramientas para que trabajen juntas sin intervención manual
                   </p>
-                  <Link href="/servicios" className="text-accent hover:underline inline-flex items-center">
-                    Saber más <ArrowRight className="ml-1" size={16} />
+                  <Link href="/servicios#integraciones" className="text-accent hover:underline inline-flex items-center">
+                    Ver integraciones entre herramientas <ArrowRight className="ml-1" size={16} />
                   </Link>
                 </CardContent>
               </Card>
@@ -132,8 +132,8 @@ export default function HomePage() {
                   <p className="text-muted-foreground mb-4 leading-relaxed">
                     Implementa inteligencia artificial para análisis de datos, atención al cliente y toma de decisiones
                   </p>
-                  <Link href="/servicios" className="text-accent hover:underline inline-flex items-center">
-                    Saber más <ArrowRight className="ml-1" size={16} />
+                  <Link href="/servicios#ia" className="text-accent hover:underline inline-flex items-center">
+                    Ver soluciones de inteligencia artificial <ArrowRight className="ml-1" size={16} />
                   </Link>
                 </CardContent>
               </Card>
@@ -144,8 +144,8 @@ export default function HomePage() {
                   <p className="text-muted-foreground mb-4 leading-relaxed">
                     Software personalizado que se adapta exactamente a las necesidades específicas de tu empresa
                   </p>
-                  <Link href="/servicios" className="text-accent hover:underline inline-flex items-center">
-                    Saber más <ArrowRight className="ml-1" size={16} />
+                  <Link href="/servicios#desarrollo" className="text-accent hover:underline inline-flex items-center">
+                    Ver desarrollo de software a medida <ArrowRight className="ml-1" size={16} />
                   </Link>
                 </CardContent>
               </Card>
