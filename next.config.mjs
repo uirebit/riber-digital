@@ -3,6 +3,8 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
+  poweredByHeader: false,
+  compress: true,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -75,6 +77,10 @@ const nextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin',
+          },
+          {
+            key: 'Server',
+            value: 'webserver',
           },
         ],
       },
