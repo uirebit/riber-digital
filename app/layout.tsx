@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import { CookieBanner } from "@/components/cookie-banner"
+import { CookieBannerWrapper } from "@/components/cookie-banner-wrapper"
 import { generateOrganizationSchema } from "@/lib/structured-data"
 import "./globals.css"
 
@@ -70,7 +70,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased" suppressHydrationWarning>
         {children}
-        <CookieBanner />
+        <CookieBannerWrapper />
       </body>
     </html>
   )
