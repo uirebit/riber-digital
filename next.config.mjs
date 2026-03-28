@@ -26,6 +26,7 @@ const nextConfig = {
         ],
         destination: 'https://www.riberdigital.es/:path*',
         permanent: true,
+        statusCode: 301,
       },
       // Redirigir .com a .es
       {
@@ -38,6 +39,7 @@ const nextConfig = {
         ],
         destination: 'https://www.riberdigital.es/:path*',
         permanent: true,
+        statusCode: 301,
       },
       {
         source: '/:path*',
@@ -49,6 +51,7 @@ const nextConfig = {
         ],
         destination: 'https://www.riberdigital.es/:path*',
         permanent: true,
+        statusCode: 301,
       },
     ]
   },
