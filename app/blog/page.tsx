@@ -33,6 +33,14 @@ const blogPosts = [
     excerpt:
       "Los agentes de IA ya no solo responden preguntas: identifican tareas, las planifican y las ejecutan solos. Descubre qué significa esto para tu PYME.",
     date: "5 de abril, 2026",
+    category: "Inteligencia Artificial",
+    slug: "ia-agentes-autonomos-pymes",
+  },
+  {
+    title: "5 procesos que toda PYME debería automatizar en 2025",
+    excerpt:
+      "Los agentes de IA ya no solo responden preguntas: identifican tareas, las planifican y las ejecutan solos. Descubre qué significa esto para tu PYME.",
+    date: "5 de abril, 2026",
     dateISO: "2026-04-05",
     category: "Inteligencia Artificial",
     slug: "ia-agentes-autonomos-pymes",
