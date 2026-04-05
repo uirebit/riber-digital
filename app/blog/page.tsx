@@ -27,6 +27,14 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    title: "La IA ya no espera órdenes: qué son los agentes autónomos y qué significan para tu empresa",
+    excerpt:
+      "Los agentes de IA ya no solo responden preguntas: identifican tareas, las planifican y las ejecutan solos. Descubre qué significa esto para tu PYME.",
+    date: "5 de abril, 2026",
+    category: "Inteligencia Artificial",
+    slug: "ia-agentes-autonomos-pymes",
+  },
+  {
     title: "5 procesos que toda PYME debería automatizar en 2025",
     excerpt:
       "Descubre qué tareas repetitivas están consumiendo el tiempo de tu equipo y cómo automatizarlas para ahorrar hasta 20 horas semanales.",
