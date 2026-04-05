@@ -26,6 +26,9 @@ export function Navigation() {
             <Link href="/servicios" className="text-foreground hover:text-accent transition-colors">
               Servicios
             </Link>
+            <Link href="/blog" className="text-foreground hover:text-accent transition-colors">
+              Blog
+            </Link>
             <Link href="/contacto">
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">Contacto</Button>
             </Link>
@@ -57,6 +60,13 @@ export function Navigation() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Servicios
+            </Link>
+            <Link
+              href="/blog"
+              className="block text-foreground hover:text-accent transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Blog
             </Link>
             <Link href="/contacto" onClick={() => setMobileMenuOpen(false)}>
               <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Contacto</Button>
