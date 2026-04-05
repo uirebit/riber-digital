@@ -2,76 +2,74 @@ import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Blog - Digitalización y Automatización para PYMEs",
-  description: "Artículos sobre automatización, digitalización e IA para PYMEs. Guías prácticas y casos de uso de transformación digital para empresas españolas.",
+  title: "Blog | Digitalización y Automatización para PYMEs - Riberdigital",
+  description: "Artículos prácticos sobre automatización, digitalización e inteligencia artificial para PYMEs españolas. Guías reales para optimizar tu negocio.",
   keywords: [
     "blog digitalización empresas",
     "automatización para pymes",
+    "inteligencia artificial empresas España",
     "consejos transformación digital",
-    "casos uso IA empresas",
     "blog consultoría digital España",
   ],
   alternates: {
-    canonical: '/blog',
+    canonical: 'https://www.riberdigital.es/blog',
   },
   openGraph: {
     title: "Blog de Consultoría Digital | Riberdigital",
     description: "Guías prácticas sobre automatización, digitalización e IA para PYMEs en España.",
     url: 'https://www.riberdigital.es/blog',
+    type: 'website',
+    siteName: 'Riberdigital',
   },
 }
 
 const blogPosts = [
   {
-    title: "5 procesos que toda PYME debería automatizar en 2025",
+    title: "La IA ya no espera órdenes: qué son los agentes autónomos y qué significan para tu empresa",
     excerpt:
-      "Descubre qué tareas repetitivas están consumiendo el tiempo de tu equipo y cómo automatizarlas para ahorrar hasta 20 horas semanales.",
-    date: "15 de marzo, 2025",
-    category: "Automatización",
-  },
-  {
-    title: "Cómo digitalizar tu empresa sin morir en el intento",
-    excerpt:
-      "Guía práctica paso a paso para pequeñas empresas que quieren modernizarse sin complicaciones técnicas ni grandes inversiones.",
-    date: "10 de marzo, 2025",
-    category: "Digitalización",
-  },
-  {
-    title: "IA para PYMEs: casos de uso reales que dan resultados",
-    excerpt:
-      "Ejemplos concretos de cómo empresas como la tuya están usando inteligencia artificial para mejorar atención al cliente y toma de decisiones.",
-    date: "5 de marzo, 2025",
+      "Los agentes de IA ya no solo responden preguntas: identifican tareas, las planifican y las ejecutan solos. Descubre qué significa esto para tu PYME.",
+    date: "5 de abril, 2026",
+    dateISO: "2026-04-05",
     category: "Inteligencia Artificial",
-  },
-  {
-    title: "Por qué tu ERP y CRM no se hablan (y cómo solucionarlo)",
-    excerpt:
-      "Las integraciones entre sistemas eliminan trabajo manual y errores. Te explicamos cómo conectar tus herramientas empresariales.",
-    date: "28 de febrero, 2025",
-    category: "Integraciones",
-  },
-  {
-    title: "El coste real de los procesos manuales en tu empresa",
-    excerpt:
-      "Calcula cuánto dinero pierdes cada mes por tareas manuales y descubre el retorno de inversión de la automatización.",
-    date: "20 de febrero, 2025",
-    category: "Eficiencia",
-  },
-  {
-    title: "De Excel a sistema: cuándo es el momento de dar el salto",
-    excerpt: "Señales claras de que tu empresa ha superado las hojas de cálculo y necesita soluciones más robustas.",
-    date: "12 de febrero, 2025",
-    category: "Digitalización",
+    slug: "ia-agentes-autonomos-pymes",
   },
 ]
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blog Riberdigital",
+  "description": "Artículos prácticos sobre automatización, digitalización e inteligencia artificial para PYMEs españolas.",
+  "url": "https://www.riberdigital.es/blog",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Riberdigital",
+    "url": "https://www.riberdigital.es",
+  },
+  "blogPost": blogPosts.map((post) => ({
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "datePublished": post.dateISO,
+    "url": `https://www.riberdigital.es/blog/${post.slug}`,
+    "author": {
+      "@type": "Organization",
+      "name": "Riberdigital",
+    },
+  })),
+}
 
 export default function BlogPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
       <main className="pt-16">
         {/* Header */}
@@ -90,24 +88,30 @@ export default function BlogPage() {
         <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {blogPosts.map((post, index) => (
-                <Card key={index} className="border-border bg-card hover:shadow-lg transition-shadow flex flex-col">
-                  <CardContent className="pt-6 flex flex-col flex-grow">
-                    <div className="inline-block mb-3">
-                      <span className="text-xs font-semibold text-accent bg-accent/10 px-3 py-1 rounded-full">
-                        {post.category}
-                      </span>
-                    </div>
-                    <h2 className="text-xl font-bold text-card-foreground mb-3 leading-snug">{post.title}</h2>
-                    <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">{post.excerpt}</p>
-                    <div className="flex items-center justify-between pt-4 border-t border-border">
-                      <span className="text-sm text-muted-foreground">{post.date}</span>
-                      <Button variant="ghost" size="sm" className="text-accent hover:text-accent/80" aria-label={`Leer artículo: ${post.title}`}>
-                        Leer artículo <ArrowRight className="ml-1" size={16} />
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
+              {blogPosts.map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
+                  <Card className="border-border bg-card hover:shadow-lg transition-shadow flex flex-col h-full">
+                    <CardContent className="pt-6 flex flex-col flex-grow">
+                      <div className="inline-block mb-3">
+                        <span className="text-xs font-semibold text-accent bg-accent/10 px-3 py-1 rounded-full">
+                          {post.category}
+                        </span>
+                      </div>
+                      <h2 className="text-xl font-bold text-card-foreground mb-3 leading-snug group-hover:text-accent transition-colors">
+                        {post.title}
+                      </h2>
+                      <p className="text-muted-foreground mb-4 leading-relaxed flex-grow">{post.excerpt}</p>
+                      <div className="flex items-center justify-between pt-4 border-t border-border">
+                        <time dateTime={post.dateISO} className="text-sm text-muted-foreground">
+                          {post.date}
+                        </time>
+                        <span className="text-sm font-medium text-accent flex items-center gap-1 group-hover:gap-2 transition-all">
+                          Leer artículo <ArrowRight size={16} />
+                        </span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>
@@ -127,8 +131,11 @@ export default function BlogPage() {
                 type="email"
                 placeholder="tu@email.com"
                 className="flex-1 px-4 py-2 rounded-md border border-input bg-background text-foreground"
+                aria-label="Tu dirección de email"
               />
-              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">Suscribirse</Button>
+              <button className="px-6 py-2 rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-medium transition-colors">
+                Suscribirse
+              </button>
             </div>
           </div>
         </section>
