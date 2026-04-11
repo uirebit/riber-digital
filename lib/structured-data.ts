@@ -1,3 +1,7 @@
+// Replace these with your actual LinkedIn URLs
+const LINKEDIN_PERSONAL = 'https://www.linkedin.com/in/YOUR_LINKEDIN_SLUG'
+const LINKEDIN_COMPANY = 'https://www.linkedin.com/company/YOUR_COMPANY_SLUG'
+
 export function generateOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
@@ -5,7 +9,7 @@ export function generateOrganizationSchema() {
     name: 'Riberdigital',
     url: 'https://www.riberdigital.es',
     logo: 'https://www.riberdigital.es/riberdigital-logo.png',
-    description: 'Consultoría digital especializada en automatización de procesos y digitalización empresarial para PYMEs en España',
+    description: 'Consultoría digital especializada en automatización con IA y digitalización empresarial para PYMEs en España',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'ES',
@@ -17,10 +21,31 @@ export function generateOrganizationSchema() {
       email: 'contacto@riberdigital.es',
       availableLanguage: 'Spanish',
     },
+    founder: generateFounderSchema(),
     sameAs: [
-      // Agregar tus redes sociales aquí
-      // 'https://www.linkedin.com/company/riberdigital',
-      // 'https://twitter.com/riberdigital',
+      LINKEDIN_PERSONAL,
+      LINKEDIN_COMPANY,
+    ],
+  }
+}
+
+export function generateFounderSchema() {
+  return {
+    '@type': 'Person',
+    name: 'Consultor Riberdigital',
+    jobTitle: 'Consultor de Transformación Digital',
+    url: 'https://www.riberdigital.es/nosotros',
+    sameAs: [LINKEDIN_PERSONAL],
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Riberdigital',
+    },
+    knowsAbout: [
+      'Automatización de procesos empresariales',
+      'Inteligencia artificial aplicada',
+      'Digitalización de PYMEs',
+      'Integración de sistemas ERP y CRM',
+      'Desarrollo de software a medida',
     ],
   }
 }
@@ -43,7 +68,7 @@ export function generateServiceSchema() {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     name: 'Riberdigital - Consultoría Digital',
-    description: 'Servicios de consultoría digital, automatización de procesos y digitalización para PYMEs',
+    description: 'Servicios de automatización con IA, digitalización y desarrollo a medida para PYMEs',
     url: 'https://www.riberdigital.es',
     priceRange: '$$',
     areaServed: {
@@ -59,7 +84,15 @@ export function generateServiceSchema() {
           itemOffered: {
             '@type': 'Service',
             name: 'Automatización de procesos empresariales',
-            description: 'Automatización de tareas repetitivas y procesos manuales',
+            description: 'Automatización de tareas repetitivas y procesos manuales con IA',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Soluciones basadas en IA para PYMEs',
+            description: 'Chatbots, agentes autónomos y análisis predictivo aplicados a casos reales',
           },
         },
         {
@@ -67,7 +100,7 @@ export function generateServiceSchema() {
           itemOffered: {
             '@type': 'Service',
             name: 'Digitalización de procesos internos',
-            description: 'Transformación digital de procesos en papel a sistemas digitales',
+            description: 'Transformación digital de procesos en papel a sistemas digitales centralizados',
           },
         },
         {
