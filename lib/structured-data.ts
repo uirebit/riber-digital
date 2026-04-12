@@ -1,6 +1,6 @@
 // Replace these with your actual LinkedIn URLs
-const LINKEDIN_PERSONAL = 'https://www.linkedin.com/in/YOUR_LINKEDIN_SLUG'
-const LINKEDIN_COMPANY = 'https://www.linkedin.com/company/YOUR_COMPANY_SLUG'
+const LINKEDIN_PERSONAL = 'https://www.linkedin.com/in/andrei-tiberiu-david/'
+const LINKEDIN_COMPANY = 'https://www.linkedin.com/company/riberdigital/'
 
 export function generateOrganizationSchema() {
   return {

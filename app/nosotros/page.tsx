@@ -60,7 +60,7 @@ export default function NosotrosPage() {
                 />
                 {/* LinkedIn — replace # with your actual LinkedIn URL */}
                 <a
-                  href="https://www.linkedin.com/in/YOUR_LINKEDIN_SLUG"
+                  href="https://www.linkedin.com/in/andrei-tiberiu-david/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"

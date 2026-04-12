@@ -34,7 +34,7 @@ const jsonLd = {
   datePublished: "2026-04-05",
   dateModified: "2026-04-05",
   url: "https://www.riberdigital.es/blog/ia-agentes-autonomos-pymes",
-  author: { "@type": "Person", name: "Consultor Riberdigital", url: "https://www.riberdigital.es/nosotros", sameAs: "https://www.linkedin.com/in/YOUR_LINKEDIN_SLUG" },
+  author: { "@type": "Person", name: "Consultor Riberdigital", url: "https://www.riberdigital.es/nosotros", sameAs: "https://www.linkedin.com/in/andrei-tiberiu-david/" },
   publisher: { "@type": "Organization", name: "Riberdigital", url: "https://www.riberdigital.es" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.riberdigital.es/blog/ia-agentes-autonomos-pymes" },
   articleSection: "Inteligencia Artificial",
