@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
+import { NewsletterForm } from "@/components/newsletter-form"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
@@ -126,17 +127,7 @@ export default function BlogPage() {
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Suscríbete para recibir artículos sobre automatización y digitalización directamente en tu bandeja
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="tu@email.com"
-                className="flex-1 px-4 py-2 rounded-md border border-input bg-background text-foreground"
-                aria-label="Tu dirección de email"
-              />
-              <button className="px-6 py-2 rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-medium transition-colors">
-                Suscribirse
-              </button>
-            </div>
+            <NewsletterForm />
           </div>
         </section>
       </main>

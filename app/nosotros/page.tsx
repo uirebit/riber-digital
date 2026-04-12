@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
-import { Target, Users, Lightbulb, Award, ArrowRight } from "lucide-react"
+import { Target, Users, Lightbulb, Award, ArrowRight, Linkedin } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -50,14 +50,24 @@ export default function NosotrosPage() {
                   </p>
                 </div>
               </div>
-              <div className="flex justify-center">
+              <div className="flex flex-col items-center gap-4">
                 <Image
-                  src="/riberdigital-logo.png"
-                  alt="Riberdigital Logo"
-                  width={400}
-                  height={400}
-                  className="w-full max-w-md"
+                  src="/founder.png"
+                  alt="Fundador de Riberdigital"
+                  width={280}
+                  height={280}
+                  className="rounded-2xl object-cover w-56 h-56 sm:w-72 sm:h-72"
                 />
+                {/* LinkedIn — replace # with your actual LinkedIn URL */}
+                <a
+                  href="https://www.linkedin.com/in/andrei-tiberiu-david/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Linkedin className="w-4 h-4 text-accent" />
+                  Conecta en LinkedIn
+                </a>
               </div>
             </div>
           </div>

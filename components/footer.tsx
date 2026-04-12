@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { MessageCircle } from "lucide-react"
 
 export function Footer() {
   return (
@@ -29,6 +30,15 @@ export function Footer() {
               >
                 Contacto
               </Link>
+              <a
+                href="https://wa.me/34652675497"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
+                <MessageCircle className="w-3.5 h-3.5" />
+                WhatsApp
+              </a>
             </div>
           </div>
 

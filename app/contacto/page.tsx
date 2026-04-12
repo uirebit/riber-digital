@@ -3,7 +3,8 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 import { ContactForm } from "@/components/contact-form"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Testimonials } from "@/components/testimonials"
+import { Mail, MessageCircle, Phone, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Contacto - Asesoría Digital para PYMEs",
@@ -77,7 +78,22 @@ export default function ContactoPage() {
                       <Phone className="w-5 h-5 text-accent mt-1" />
                       <div>
                         <p className="text-sm font-medium text-foreground">Teléfono</p>
-                        <p className="text-sm text-muted-foreground">+34 652675497</p>
+                        <a href="tel:+34652675497" className="text-sm text-muted-foreground hover:text-foreground transition-colors">+34 652675497</a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <MessageCircle className="w-5 h-5 text-accent mt-1" />
+                      <div>
+                        <p className="text-sm font-medium text-foreground">WhatsApp</p>
+                        <a
+                          href="https://wa.me/34652675497"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                        >
+                          Escríbenos ahora
+                        </a>
                       </div>
                     </div>
 
@@ -91,15 +107,7 @@ export default function ContactoPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-border bg-accent/5">
-                  <CardContent className="pt-6">
-                    <h3 className="font-semibold text-foreground mb-2">Asesoría sin coste</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      La primera consulta es totalmente gratuita. Te explicaremos qué podemos hacer por tu empresa y
-                      cómo
-                    </p>
-                  </CardContent>
-                </Card>
+                <Testimonials compact limit={1} />
               </div>
             </div>
           </div>
