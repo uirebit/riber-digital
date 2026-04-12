@@ -4,9 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Testimonials } from "@/components/testimonials"
 import { ContactForm } from "@/components/contact-form"
-import { ArrowRight, Zap, Target, Sparkles, Plane, Wrench, TrendingUp, Clock, Shield, Gauge } from "lucide-react"
+import { ArrowRight, Zap, Target, Sparkles, Plane, Wrench, TrendingUp, Clock, Shield, Gauge, Check } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -43,10 +42,11 @@ export default function HomePage() {
               IA aplicada para PYMEs — sin complicaciones
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-              Tu empresa pierde horas cada semana en tareas que debería hacer una máquina
+              Identifico qué está frenando tu negocio y lo resuelvo con código e IA
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-              Automatizamos y digitalizamos los procesos de PYMEs con IA y software a medida — para que tu equipo trabaje en lo que realmente importa.
+              Sin equipos grandes, sin proyectos de seis meses, sin tecnicismos.
+              Llego, entiendo tu problema operativo real, y lo construyo — yo directamente.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contacto">
@@ -55,12 +55,15 @@ export default function HomePage() {
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
-              <Link href="/servicios">
+              <Link href="#como-trabajo">
                 <Button size="lg" variant="outline">
-                  Ver servicios
+                  Ver cómo trabajo
                 </Button>
               </Link>
             </div>
+            <p className="text-sm text-muted-foreground mt-6">
+              30 minutos. Sin compromiso. Te digo exactamente dónde estás perdiendo tiempo y dinero.
+            </p>
           </div>
         </section>
 
@@ -86,20 +89,41 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* What We Do */}
+        {/* Problem identification */}
         <section className="py-20 bg-background">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-12">Si esto te suena, podemos trabajar juntos</h2>
+            <div className="space-y-4">
+              {[
+                "Tienes procesos que tu equipo hace a mano y que nadie sabe cómo automatizar",
+                "Has hablado con agencias y te han propuesto proyectos largos y caros que nunca acaban de arrancar",
+                "Sabes que la tecnología podría ayudarte, pero no tienes a nadie de confianza que lo entienda y lo construya",
+                "Tienes datos que no estás aprovechando — pedidos, clientes, reseñas — y no sabes qué hacer con ellos",
+                "Necesitas a alguien que entienda tu negocio, no solo la tecnología",
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-4 p-4 rounded-lg bg-muted/40 border border-border">
+                  <Check className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                  <p className="text-muted-foreground leading-relaxed">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* How I work */}
+        <section id="como-trabajo" className="py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">Cómo lo hacemos</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">No subcontrato. No delego. Lo construyo yo.</h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-              Tres palancas que transforman cómo trabaja tu empresa
+              Eso significa que cuando hablamos, estás hablando con quien va a resolver tu problema. Sin intermediarios, sin teléfono roto, sin sorpresas.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="border-border bg-card">
                 <CardContent className="pt-6">
                   <Zap className="w-12 h-12 text-accent mb-4" />
-                  <h3 className="text-xl font-semibold mb-3 text-card-foreground">Automatizamos</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-card-foreground">Diagnóstico honesto</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Tus facturas, reportes y notificaciones salen solas. Sin que nadie tenga que tocar nada.
+                    Antes de proponer nada, entiendo qué está pasando en tu operación. Si el problema se resuelve con algo simple, te lo digo. No te vendo lo que no necesitas.
                   </p>
                 </CardContent>
               </Card>
@@ -107,9 +131,9 @@ export default function HomePage() {
               <Card className="border-border bg-card">
                 <CardContent className="pt-6">
                   <Target className="w-12 h-12 text-accent mb-4" />
-                  <h3 className="text-xl font-semibold mb-3 text-card-foreground">Digitalizamos</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-card-foreground">Construcción directa</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    El papel y el Excel desaparecen. La información está donde la necesitas, cuando la necesitas.
+                    Escribo el código y configuro la IA yo mismo. Eso se traduce en velocidad real — semanas, no meses.
                   </p>
                 </CardContent>
               </Card>
@@ -117,9 +141,9 @@ export default function HomePage() {
               <Card className="border-border bg-card">
                 <CardContent className="pt-6">
                   <Sparkles className="w-12 h-12 text-accent mb-4" />
-                  <h3 className="text-xl font-semibold mb-3 text-card-foreground">Aplicamos IA</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-card-foreground">Sin dependencia tecnológica</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Chatbots, análisis predictivo y agentes autónomos adaptados al tamaño y presupuesto de tu empresa.
+                    No necesitas un equipo técnico para mantener lo que construyo. Queda en tus manos y funciona solo.
                   </p>
                 </CardContent>
               </Card>
@@ -128,7 +152,7 @@ export default function HomePage() {
         </section>
 
         {/* Featured Services */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">Servicios destacados</h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
@@ -193,14 +217,87 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="py-20 bg-background">
+        {/* Real cases */}
+        <section className="py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">Lo que dicen nuestros clientes</h2>
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-              Resultados reales en empresas como la tuya
-            </p>
-            <Testimonials />
+            <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">Problemas reales que ya he resuelto</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+              <Card className="border-border bg-card flex flex-col">
+                <CardContent className="pt-6 flex flex-col flex-1">
+                  <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-3">Restauración · Gestión de reseñas con IA</p>
+                  <p className="text-muted-foreground leading-relaxed flex-1 mb-4">
+                    Un restaurante no tenía capacidad de responder sus reseñas de Google a tiempo. Cada reseña sin respuesta era un cliente potencial que se iba a la competencia.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Construí un sistema de respuesta automática con IA que mantiene el tono de la marca y responde en menos de dos horas a cualquier reseña, sin intervención humana. Montado sobre AWS.
+                  </p>
+                  <div className="border-t border-border pt-4">
+                    <p className="text-sm font-semibold text-foreground">De responder el 20% de las reseñas a responder el 100%, de forma consistente.</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-border bg-card flex flex-col">
+                <CardContent className="pt-6 flex flex-col flex-1">
+                  <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-3">Ecommerce · Automatización de email marketing</p>
+                  <p className="text-muted-foreground leading-relaxed flex-1 mb-4">
+                    Una tienda online tenía miles de clientes en su base de datos que no estaba aprovechando. Cada venta nueva dependía de captar clientes nuevos, ignorando a los que ya habían comprado.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Implementé segmentación y automatización de email marketing adaptada a su catálogo y comportamiento de compra.
+                  </p>
+                  <div className="border-t border-border pt-4">
+                    <p className="text-sm font-semibold text-foreground">Ingresos recurrentes a partir de clientes existentes, sin invertir en captación.</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-border bg-card flex flex-col">
+                <CardContent className="pt-6 flex flex-col flex-1">
+                  <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-3">Logística · Sistema de gestión de pedidos</p>
+                  <p className="text-muted-foreground leading-relaxed flex-1 mb-4">
+                    Una empresa gestionaba sus pedidos desde PDFs y Excel, con errores de transcripción y retrasos en el picking que costaban tiempo y dinero cada día.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Construí un sistema completo de gestión de pedidos en AWS con carga automática desde PDF, gestión de picking y trazabilidad del proceso.
+                  </p>
+                  <div className="border-t border-border pt-4">
+                    <p className="text-sm font-semibold text-foreground">Proceso digitalizado, sin errores manuales, escalable al volumen de la empresa.</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Differentiation table */}
+        <section className="py-20 bg-background">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-12">Por qué trabajar conmigo y no con una agencia</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr>
+                    <th className="text-left p-4 bg-muted/50 border border-border rounded-tl-lg text-muted-foreground font-semibold">Con una agencia</th>
+                    <th className="text-left p-4 bg-accent/10 border border-accent/30 rounded-tr-lg text-accent font-semibold">Conmigo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Hablas con un comercial", "Hablas con quien lo construye"],
+                    ["Proyecto de 3–6 meses", "Primeros resultados en semanas"],
+                    ["Solución genérica adaptada a ti", "Construido específicamente para tu problema"],
+                    ["Dependes de ellos para cualquier cambio", "Queda en tus manos"],
+                    ["Presupuesto inflado", "Solo pagas lo que necesitas"],
+                  ].map(([agency, me], i) => (
+                    <tr key={i}>
+                      <td className="p-4 border border-border text-muted-foreground text-sm">{agency}</td>
+                      <td className="p-4 border border-accent/20 bg-accent/5 text-foreground text-sm font-medium">{me}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
 
@@ -285,7 +382,7 @@ export default function HomePage() {
         {/* Process */}
         <section className="py-20 bg-primary text-primary-foreground">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">Nuestro proceso de trabajo</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">Así funciona trabajar conmigo</h2>
             <p className="text-center text-primary-foreground/70 mb-12 max-w-2xl mx-auto">
               Sin sorpresas. Sabes exactamente qué va a pasar en cada momento.
             </p>
@@ -294,22 +391,22 @@ export default function HomePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent text-accent-foreground font-bold text-xl mb-4">
                   1
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Diagnóstico</h3>
+                <h3 className="text-xl font-semibold mb-2">Diagnóstico gratuito</h3>
                 <p className="text-primary-foreground/80 text-sm leading-relaxed mb-2">
-                  Analizamos tus procesos e identificamos oportunidades de mejora
+                  Me cuentas qué está pasando en tu operación. Yo identifico qué se puede automatizar y qué resultado realista puedes esperar.
                 </p>
-                <p className="text-accent text-xs font-medium">1 reunión · 48h</p>
+                <p className="text-accent text-xs font-medium">30 min</p>
               </div>
 
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent text-accent-foreground font-bold text-xl mb-4">
                   2
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Propuesta</h3>
+                <h3 className="text-xl font-semibold mb-2">Propuesta concreta</h3>
                 <p className="text-primary-foreground/80 text-sm leading-relaxed mb-2">
-                  Soluciones concretas con costes y beneficios claros, sin compromiso
+                  Sin tecnicismos. Qué voy a construir, en cuánto tiempo, y qué va a cambiar en tu día a día.
                 </p>
-                <p className="text-accent text-xs font-medium">3–5 días</p>
+                <p className="text-accent text-xs font-medium">En 48h</p>
               </div>
 
               <div className="text-center">
@@ -318,7 +415,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Implementación</h3>
                 <p className="text-primary-foreground/80 text-sm leading-relaxed mb-2">
-                  Desarrollamos y ponemos en marcha la solución con tu equipo
+                  Empezamos. Sin reuniones interminables, sin burocracia. Construyo, pruebo, entrego.
                 </p>
                 <p className="text-accent text-xs font-medium">2–6 semanas</p>
               </div>
@@ -327,9 +424,9 @@ export default function HomePage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent text-accent-foreground font-bold text-xl mb-4">
                   4
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Mejora continua</h3>
+                <h3 className="text-xl font-semibold mb-2">Lo dejas funcionando</h3>
                 <p className="text-primary-foreground/80 text-sm leading-relaxed mb-2">
-                  Optimizamos y ajustamos según los resultados obtenidos
+                  No necesitas depender de mí para que siga funcionando. Pero si necesitas evolucionarlo, estoy.
                 </p>
                 <p className="text-accent text-xs font-medium">Seguimiento mensual</p>
               </div>
@@ -343,10 +440,10 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               <div>
                 <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
-                  ¿Listo para dejar de perder tiempo?
+                  ¿Tienes un proceso que sabes que se puede automatizar pero nadie te ha sabido resolver cómo?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Cuéntanos tu proyecto. Analizaremos tu situación y te diremos exactamente qué haríamos y cómo.
+                  Eso es exactamente lo que hago.
                 </p>
                 <div className="space-y-4 text-sm text-muted-foreground">
                   <div className="flex items-start gap-3">
@@ -368,7 +465,7 @@ export default function HomePage() {
                 <CardContent className="pt-6">
                   <ContactForm />
                   <p className="text-xs text-muted-foreground text-center mt-4">
-                    Respuesta en menos de 24h · Primera consulta gratuita
+                    30 minutos. Sin compromiso. Si no veo cómo ayudarte, te lo digo.
                   </p>
                 </CardContent>
               </Card>
