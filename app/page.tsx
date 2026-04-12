@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
@@ -245,12 +246,14 @@ export default function HomePage() {
         <section className="py-20 bg-background">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Photo placeholder — swap /public/founder.jpg to replace */}
               <div className="flex justify-center lg:justify-end">
-                <div className="w-56 h-56 rounded-2xl bg-accent/10 border-2 border-accent/20 flex flex-col items-center justify-center text-accent">
-                  <span className="text-5xl font-bold">R</span>
-                  <span className="text-sm mt-2 text-accent/70">Foto próximamente</span>
-                </div>
+                <Image
+                  src="/founder.png"
+                  alt="Fundador de Riberdigital"
+                  width={320}
+                  height={320}
+                  className="rounded-2xl object-cover w-64 h-64 lg:w-80 lg:h-80"
+                />
               </div>
 
               <div>

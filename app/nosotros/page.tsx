@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 import { Target, Users, Lightbulb, Award, ArrowRight, Linkedin } from "lucide-react"
 import type { Metadata } from "next"
 
@@ -50,11 +51,13 @@ export default function NosotrosPage() {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-4">
-                {/* Photo placeholder — replace /public/founder.jpg to swap */}
-                <div className="w-56 h-56 rounded-2xl bg-accent/10 border-2 border-accent/20 flex flex-col items-center justify-center text-accent">
-                  <span className="text-5xl font-bold">R</span>
-                  <span className="text-sm mt-2 text-accent/70">Foto próximamente</span>
-                </div>
+                <Image
+                  src="/founder.png"
+                  alt="Fundador de Riberdigital"
+                  width={280}
+                  height={280}
+                  className="rounded-2xl object-cover w-56 h-56 sm:w-72 sm:h-72"
+                />
                 {/* LinkedIn — replace # with your actual LinkedIn URL */}
                 <a
                   href="https://www.linkedin.com/in/YOUR_LINKEDIN_SLUG"
