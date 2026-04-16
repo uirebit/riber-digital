@@ -12,35 +12,35 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.riberdigital.es'),
+  metadataBase: new URL('https://www.ribersistemas.es'),
   title: {
-    default: "Riberdigital | Consultoría Digital para PYMEs en España",
-    template: "%s | Riberdigital",
+    default: "ribersistemas | Consultor técnico independiente para PYMEs",
+    template: "%s | ribersistemas",
   },
-  description: "Automatización con IA, digitalización y desarrollo a medida para PYMEs. Implementamos inteligencia artificial aplicada a casos reales. Primera consulta gratuita.",
+  description: "Resuelvo problemas de operaciones, ventas y marketing construyendo software e IA a medida. Sin agencias, sin subcontratas, sin PowerPoints. Primera llamada gratuita.",
   keywords: [
+    "consultor técnico independiente pymes",
     "automatización con IA para pymes",
-    "consultoría digital España",
-    "automatización de procesos para pymes",
+    "software a medida para pymes España",
     "digitalización de empresas España",
     "agentes IA para empresas",
     "consultor digital pymes",
-    "transformación digital empresas",
+    "desarrollo software pymes",
     "automatización empresarial España",
     "inteligencia artificial para pymes",
-    "integración ERP CRM automatización",
+    "ribersistemas consultor",
   ],
   generator: "v0.app",
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Riberdigital | Consultoría Digital para PYMEs en España",
+    title: "ribersistemas | Consultor técnico independiente para PYMEs",
     description:
-      "Automatización con IA, digitalización y desarrollo a medida para PYMEs. Implementamos inteligencia artificial aplicada a casos reales.",
+      "Resuelvo problemas de operaciones, ventas y marketing construyendo software e IA a medida. Sin agencias, sin subcontratas, sin PowerPoints.",
     type: "website",
     locale: "es_ES",
-    url: 'https://www.riberdigital.es',
+    url: 'https://www.ribersistemas.es',
   },
   icons: {
     icon: [

@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: '/contacto',
   },
   openGraph: {
-    title: "Contacta con Riberdigital",
+    title: "Contacta con ribersistemas",
     description: "Asesoría gratuita para digitalizar y automatizar tu PYME. Respuesta en 24 horas.",
-    url: 'https://www.riberdigital.es/contacto',
+    url: 'https://www.ribersistemas.es/contacto',
   },
 }
 
@@ -70,7 +70,7 @@ export default function ContactoPage() {
                       <Mail className="w-5 h-5 text-accent mt-1" />
                       <div>
                         <p className="text-sm font-medium text-foreground">Email</p>
-                        <p className="text-sm text-muted-foreground">contacto@riberdigital.es</p>
+                        <p className="text-sm text-muted-foreground">contacto@ribersistemas.es</p>
                       </div>
                     </div>
 

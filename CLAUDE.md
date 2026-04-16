@@ -15,7 +15,7 @@ No test suite is configured. There is no `test` script.
 
 ## Architecture
 
-**Riberdigital** is a B2B digital-transformation consulting website built with Next.js App Router, TypeScript, Tailwind CSS v4, and shadcn/ui. All content is hardcoded in source files — there is no CMS or database.
+**ribersistemas** is a B2B technical consulting website built with Next.js App Router, TypeScript, Tailwind CSS v4, and shadcn/ui. All content is hardcoded in source files — there is no CMS or database.
 
 ### Key directories
 

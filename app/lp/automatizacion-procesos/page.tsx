@@ -6,7 +6,7 @@ import { Testimonials } from "@/components/testimonials"
 import { CheckCircle2, Phone, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Automatización de Procesos para PYMEs | Riberdigital",
+  title: "Automatización de Procesos para PYMEs | ribersistemas",
   description:
     "¿Tu equipo pierde horas en tareas repetitivas? Automatizamos tus procesos empresariales con IA. Diagnóstico gratuito sin compromiso.",
   robots: {
@@ -153,7 +153,7 @@ export default function LpAutomatizacionPage() {
       {/* Minimal footer */}
       <footer className="border-t border-border py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-          <span>© {new Date().getFullYear()} Riberdigital. Todos los derechos reservados.</span>
+          <span>© {new Date().getFullYear()} ribersistemas. Todos los derechos reservados.</span>
           <div className="flex gap-4">
             <Link href="/privacidad" className="hover:text-foreground transition-colors">Política de Privacidad</Link>
             <Link href="/terminos" className="hover:text-foreground transition-colors">Términos y Condiciones</Link>

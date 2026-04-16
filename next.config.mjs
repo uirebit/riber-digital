@@ -21,23 +21,23 @@ const nextConfig = {
         has: [
           {
             type: 'host',
+            value: 'ribersistemas.es',
+          },
+        ],
+        destination: 'https://www.ribersistemas.es/:path*',
+        permanent: true,
+        statusCode: 301,
+      },
+      // Redirigir dominio antiguo al nuevo
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
             value: 'riberdigital.es',
           },
         ],
-        destination: 'https://www.riberdigital.es/:path*',
-        permanent: true,
-        statusCode: 301,
-      },
-      // Redirigir .com a .es
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'riberdigital.com',
-          },
-        ],
-        destination: 'https://www.riberdigital.es/:path*',
+        destination: 'https://www.ribersistemas.es/:path*',
         permanent: true,
         statusCode: 301,
       },
@@ -46,10 +46,10 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'www.riberdigital.com',
+            value: 'www.riberdigital.es',
           },
         ],
-        destination: 'https://www.riberdigital.es/:path*',
+        destination: 'https://www.ribersistemas.es/:path*',
         permanent: true,
         statusCode: 301,
       },

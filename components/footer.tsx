@@ -1,68 +1,42 @@
 import Link from "next/link"
-import { MessageCircle } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">
-              Riber<span className="text-accent">digital</span>
-            </h3>
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Soluciones digitales para hacer tu empresa más eficiente
-            </p>
+    <footer
+      className="py-8"
+      style={{
+        backgroundColor: "#05070c",
+        borderTop: "0.5px solid rgba(232, 234, 237, 0.15)",
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+          <p style={{ color: "rgba(232, 234, 237, 0.4)" }}>
+            ribersistemas · © {new Date().getFullYear()}
+          </p>
+          <div
+            className="flex items-center gap-6"
+            style={{ color: "rgba(232, 234, 237, 0.4)" }}
+          >
+            <a
+              href="https://www.linkedin.com/in/andrei-tiberiu-david/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-[#e8eaed]"
+            >
+              LinkedIn
+            </a>
+            {/* TODO: rellenar por Tiberiu antes del deploy — sustituir href y texto */}
+            <a
+              href="mailto:[PENDIENTE]"
+              className="transition-colors hover:text-[#e8eaed]"
+            >
+              [email@pendiente.es]
+            </a>
+            <Link href="/privacidad" className="transition-colors hover:text-[#e8eaed]">
+              Privacidad
+            </Link>
           </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Navegación</h4>
-            <div className="space-y-2 text-sm">
-              <Link
-                href="/servicios"
-                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-              >
-                Servicios
-              </Link>
-              <Link
-                href="/contacto"
-                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-              >
-                Contacto
-              </Link>
-              <a
-                href="https://wa.me/34652675497"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-              >
-                <MessageCircle className="w-3.5 h-3.5" />
-                WhatsApp
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
-            <div className="space-y-2 text-sm">
-              <Link
-                href="/privacidad"
-                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-              >
-                Política de Privacidad
-              </Link>
-              <Link
-                href="/terminos"
-                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-              >
-                Términos y Condiciones
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
-          © {new Date().getFullYear()} Riberdigital. Todos los derechos reservados.
         </div>
       </div>
     </footer>

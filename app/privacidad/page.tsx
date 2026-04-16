@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Política de Privacidad",
-  description: "Política de Privacidad de Riberdigital - Consultoría Digital",
+  description: "Política de Privacidad de ribersistemas - Consultoría Digital",
   alternates: {
     canonical: '/privacidad',
   },
@@ -34,8 +34,8 @@ export default function PrivacidadPage() {
                 El responsable del tratamiento de tus datos personales es:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li><strong>Identidad:</strong> Riberdigital</li>
-                <li><strong>Email de contacto:</strong> contacto@riberdigital.es</li>
+                <li><strong>Identidad:</strong> ribersistemas</li>
+                <li><strong>Email de contacto:</strong> contacto@ribersistemas.es</li>
                 <li><strong>Teléfono:</strong> +34 652675497</li>
               </ul>
             </div>
@@ -105,7 +105,7 @@ export default function PrivacidadPage() {
                 <li><strong>Portabilidad:</strong> Recibir tus datos en formato estructurado</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Para ejercer estos derechos, puedes contactarnos en: <a href="mailto:contacto@riberdigital.es" className="text-accent hover:underline">contacto@riberdigital.es</a>
+                Para ejercer estos derechos, puedes contactarnos en: <a href="mailto:contacto@ribersistemas.es" className="text-accent hover:underline">contacto@ribersistemas.es</a>
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
                 También tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) si consideras que no hemos tratado tus datos conforme a la normativa.
@@ -191,8 +191,8 @@ export default function PrivacidadPage() {
             <div className="border-t border-border pt-8">
               <p className="text-muted-foreground leading-relaxed">
                 Si tienes cualquier duda sobre nuestra Política de Privacidad, no dudes en contactarnos en{" "}
-                <a href="mailto:contacto@riberdigital.es" className="text-accent hover:underline">
-                  contacto@riberdigital.es
+                <a href="mailto:contacto@ribersistemas.es" className="text-accent hover:underline">
+                  contacto@ribersistemas.es
                 </a>
               </p>
             </div>

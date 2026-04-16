@@ -1,15 +1,15 @@
-// Replace these with your actual LinkedIn URLs
 const LINKEDIN_PERSONAL = 'https://www.linkedin.com/in/andrei-tiberiu-david/'
+// TODO: actualizar cuando la página de LinkedIn de ribersistemas esté creada
 const LINKEDIN_COMPANY = 'https://www.linkedin.com/company/riberdigital/'
 
 export function generateOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Riberdigital',
-    url: 'https://www.riberdigital.es',
-    logo: 'https://www.riberdigital.es/riberdigital-logo.png',
-    description: 'Consultoría digital especializada en automatización con IA y digitalización empresarial para PYMEs en España',
+    name: 'ribersistemas',
+    url: 'https://www.ribersistemas.es',
+    logo: 'https://www.ribersistemas.es/riberdigital-logo.png',
+    description: 'Consultor técnico independiente especializado en software e IA a medida para PYMEs',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'ES',
@@ -18,8 +18,8 @@ export function generateOrganizationSchema() {
       '@type': 'ContactPoint',
       telephone: '+34-652-675-497',
       contactType: 'customer service',
-      email: 'contacto@riberdigital.es',
-      availableLanguage: 'Spanish',
+      email: 'contacto@ribersistemas.es',
+      availableLanguage: ['Spanish', 'Romanian', 'English'],
     },
     founder: generateFounderSchema(),
     sameAs: [
@@ -32,13 +32,13 @@ export function generateOrganizationSchema() {
 export function generateFounderSchema() {
   return {
     '@type': 'Person',
-    name: 'Consultor Riberdigital',
-    jobTitle: 'Consultor de Transformación Digital',
-    url: 'https://www.riberdigital.es/nosotros',
+    name: 'Tiberiu David',
+    jobTitle: 'Consultor Técnico Independiente',
+    url: 'https://www.ribersistemas.es/nosotros',
     sameAs: [LINKEDIN_PERSONAL],
     worksFor: {
       '@type': 'Organization',
-      name: 'Riberdigital',
+      name: 'ribersistemas',
     },
     knowsAbout: [
       'Automatización de procesos empresariales',
@@ -67,9 +67,9 @@ export function generateServiceSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'Riberdigital - Consultoría Digital',
-    description: 'Servicios de automatización con IA, digitalización y desarrollo a medida para PYMEs',
-    url: 'https://www.riberdigital.es',
+    name: 'ribersistemas - Consultor Técnico Independiente',
+    description: 'Software e IA a medida para resolver problemas operativos de PYMEs',
+    url: 'https://www.ribersistemas.es',
     priceRange: '$$',
     areaServed: {
       '@type': 'Country',
@@ -77,7 +77,7 @@ export function generateServiceSchema() {
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Servicios de Consultoría Digital',
+      name: 'Servicios de Consultoría Técnica',
       itemListElement: [
         {
           '@type': 'Offer',

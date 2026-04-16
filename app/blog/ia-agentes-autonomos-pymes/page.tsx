@@ -5,7 +5,7 @@ import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "La IA ya no espera órdenes: agentes autónomos para tu empresa | Riberdigital",
+  title: "La IA ya no espera órdenes: agentes autónomos para tu empresa | ribersistemas",
   description: "Los agentes de IA ya no solo responden preguntas: identifican tareas, las planifican y las ejecutan solos. Descubre qué significa esto para tu PYME.",
   keywords: [
     "agentes de IA para empresas",
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     "transformación digital pymes",
   ],
   alternates: {
-    canonical: "https://www.riberdigital.es/blog/ia-agentes-autonomos-pymes",
+    canonical: "https://www.ribersistemas.es/blog/ia-agentes-autonomos-pymes",
   },
   openGraph: {
     title: "La IA ya no espera órdenes: agentes autónomos para tu empresa",
     description: "Los agentes de IA ya no solo responden preguntas: identifican tareas, las planifican y las ejecutan solos.",
-    url: "https://www.riberdigital.es/blog/ia-agentes-autonomos-pymes",
+    url: "https://www.ribersistemas.es/blog/ia-agentes-autonomos-pymes",
     type: "article",
-    siteName: "Riberdigital",
+    siteName: "ribersistemas",
   },
 }
 
@@ -33,18 +33,18 @@ const jsonLd = {
   description: "Los agentes de IA ya no solo responden preguntas: identifican tareas, las planifican y las ejecutan solos.",
   datePublished: "2026-04-05",
   dateModified: "2026-04-05",
-  url: "https://www.riberdigital.es/blog/ia-agentes-autonomos-pymes",
-  author: { "@type": "Person", name: "Consultor Riberdigital", url: "https://www.riberdigital.es/nosotros", sameAs: "https://www.linkedin.com/in/andrei-tiberiu-david/" },
-  publisher: { "@type": "Organization", name: "Riberdigital", url: "https://www.riberdigital.es" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.riberdigital.es/blog/ia-agentes-autonomos-pymes" },
+  url: "https://www.ribersistemas.es/blog/ia-agentes-autonomos-pymes",
+  author: { "@type": "Person", name: "Tiberiu David", url: "https://www.ribersistemas.es/nosotros", sameAs: "https://www.linkedin.com/in/andrei-tiberiu-david/" },
+  publisher: { "@type": "Organization", name: "ribersistemas", url: "https://www.ribersistemas.es" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.ribersistemas.es/blog/ia-agentes-autonomos-pymes" },
   articleSection: "Inteligencia Artificial",
   inLanguage: "es-ES",
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.riberdigital.es" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.riberdigital.es/blog" },
-      { "@type": "ListItem", position: 3, name: "La IA ya no espera órdenes", item: "https://www.riberdigital.es/blog/ia-agentes-autonomos-pymes" },
+      { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.ribersistemas.es" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.ribersistemas.es/blog" },
+      { "@type": "ListItem", position: 3, name: "La IA ya no espera órdenes", item: "https://www.ribersistemas.es/blog/ia-agentes-autonomos-pymes" },
     ],
   },
 }

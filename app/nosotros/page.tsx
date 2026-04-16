@@ -9,9 +9,9 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Quiénes Somos - Consultoría Digital para PYMEs",
-  description: "Conoce a Riberdigital, especialistas en automatización y digitalización para PYMEs. Transformación digital práctica con resultados medibles para tu empresa.",
+  description: "Conoce a ribersistemas, especialistas en automatización y digitalización para PYMEs. Transformación digital práctica con resultados medibles para tu empresa.",
   keywords: [
-    "riberdigital quienes somos",
+    "ribersistemas quienes somos",
     "consultoría digital España",
     "empresa transformación digital pymes",
     "consultores digitales España",
@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     canonical: '/nosotros',
   },
   openGraph: {
-    title: "Quiénes Somos | Riberdigital",
+    title: "Quiénes Somos | ribersistemas",
     description:
       "Tu socio en transformación digital. Ayudamos a PYMEs españolas a automatizar procesos y crecer de forma sostenible.",
-    url: 'https://www.riberdigital.es/nosotros',
+    url: 'https://www.ribersistemas.es/nosotros',
   },
 }
 
@@ -53,7 +53,7 @@ export default function NosotrosPage() {
               <div className="flex flex-col items-center gap-4">
                 <Image
                   src="/founder.png"
-                  alt="Fundador de Riberdigital"
+                  alt="Fundador de ribersistemas"
                   width={280}
                   height={280}
                   className="rounded-2xl object-cover w-56 h-56 sm:w-72 sm:h-72"

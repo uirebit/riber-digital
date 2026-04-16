@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Términos y Condiciones",
-  description: "Términos y Condiciones de uso de Riberdigital - Consultoría Digital",
+  description: "Términos y Condiciones de uso de ribersistemas - Consultoría Digital",
   alternates: {
     canonical: '/terminos',
   },
@@ -31,7 +31,7 @@ export default function TerminosPage() {
             <div>
               <h2 className="text-2xl font-bold text-foreground mb-4">1. Información general</h2>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                Estos Términos y Condiciones regulan el uso del sitio web de Riberdigital y los servicios de consultoría digital que ofrecemos.
+                Estos Términos y Condiciones regulan el uso del sitio web de ribersistemas y los servicios de consultoría digital que ofrecemos.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Al acceder y utilizar este sitio web, aceptas estar vinculado por estos términos. Si no estás de acuerdo, te rogamos que no utilices nuestros servicios.
@@ -41,8 +41,8 @@ export default function TerminosPage() {
             <div>
               <h2 className="text-2xl font-bold text-foreground mb-4">2. Datos identificativos</h2>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                <li><strong>Denominación:</strong> Riberdigital</li>
-                <li><strong>Email:</strong> contacto@riberdigital.es</li>
+                <li><strong>Denominación:</strong> ribersistemas</li>
+                <li><strong>Email:</strong> contacto@ribersistemas.es</li>
                 <li><strong>Teléfono:</strong> +34 652675497</li>
                 <li><strong>Actividad:</strong> Consultoría digital, desarrollo web y automatización de procesos</li>
               </ul>
@@ -67,7 +67,7 @@ export default function TerminosPage() {
             <div>
               <h2 className="text-2xl font-bold text-foreground mb-4">4. Propiedad intelectual</h2>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                Todos los contenidos del sitio web (textos, imágenes, logotipos, diseño, código) son propiedad de Riberdigital o de sus respectivos titulares, y están protegidos por las leyes de propiedad intelectual e industrial.
+                Todos los contenidos del sitio web (textos, imágenes, logotipos, diseño, código) son propiedad de ribersistemas o de sus respectivos titulares, y están protegidos por las leyes de propiedad intelectual e industrial.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Queda prohibida la reproducción, distribución, comunicación pública o transformación de estos contenidos sin autorización previa y por escrito del titular.
@@ -132,7 +132,7 @@ export default function TerminosPage() {
             <div>
               <h2 className="text-2xl font-bold text-foreground mb-4">9. Garantías y responsabilidades</h2>
               <p className="text-muted-foreground leading-relaxed mb-2">
-                Riberdigital se compromete a:
+                ribersistemas se compromete a:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
                 <li>Entregar los servicios contratados con el nivel de calidad acordado</li>
@@ -173,21 +173,21 @@ export default function TerminosPage() {
             <div>
               <h2 className="text-2xl font-bold text-foreground mb-4">13. Limitación de responsabilidad</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Riberdigital no se hace responsable de posibles errores u omisiones en el contenido del sitio web, ni de daños indirectos o consecuenciales derivados del uso de nuestros servicios, salvo en casos de dolo o negligencia grave.
+                ribersistemas no se hace responsable de posibles errores u omisiones en el contenido del sitio web, ni de daños indirectos o consecuenciales derivados del uso de nuestros servicios, salvo en casos de dolo o negligencia grave.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-bold text-foreground mb-4">14. Enlaces externos</h2>
               <p className="text-muted-foreground leading-relaxed">
-                El sitio web puede contener enlaces a sitios de terceros. Riberdigital no se responsabiliza del contenido, políticas de privacidad o prácticas de estos sitios externos.
+                El sitio web puede contener enlaces a sitios de terceros. ribersistemas no se responsabiliza del contenido, políticas de privacidad o prácticas de estos sitios externos.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-bold text-foreground mb-4">15. Modificaciones</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Riberdigital se reserva el derecho a modificar estos Términos y Condiciones en cualquier momento. Los cambios serán efectivos desde su publicación en el sitio web.
+                ribersistemas se reserva el derecho a modificar estos Términos y Condiciones en cualquier momento. Los cambios serán efectivos desde su publicación en el sitio web.
               </p>
             </div>
 
@@ -201,8 +201,8 @@ export default function TerminosPage() {
             <div className="border-t border-border pt-8">
               <p className="text-muted-foreground leading-relaxed">
                 Para cualquier consulta sobre estos Términos y Condiciones, puedes contactarnos en{" "}
-                <a href="mailto:contacto@riberdigital.es" className="text-accent hover:underline">
-                  contacto@riberdigital.es
+                <a href="mailto:contacto@ribersistemas.es" className="text-accent hover:underline">
+                  contacto@ribersistemas.es
                 </a>
               </p>
             </div>

@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     canonical: '/servicios',
   },
   openGraph: {
-    title: "Servicios de Consultoría Digital para PYMEs | Riberdigital",
+    title: "Servicios de Consultoría Digital para PYMEs | ribersistemas",
     description:
       "Automatización, digitalización, IA y desarrollo a medida para empresas españolas. Soluciones prácticas con resultados medibles.",
-    url: 'https://www.riberdigital.es/servicios',
+    url: 'https://www.ribersistemas.es/servicios',
   },
 }
 

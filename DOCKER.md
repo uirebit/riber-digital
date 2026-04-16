@@ -1,4 +1,4 @@
-# Docker para Riberdigital Web
+# Docker para ribersistemas Web
 
 ## Construcción y ejecución
 
@@ -73,7 +73,7 @@ SMTP_HOST=smtp.gmail.com
 SMTP_PORT=465
 SMTP_USER=tu-email@gmail.com
 SMTP_PASS=tu-contraseña-de-aplicacion
-CONTACT_EMAIL=contacto@riberdigital.es
+CONTACT_EMAIL=contacto@ribersistemas.es
 ```
 
 3. Descomenta la sección `env_file` en `docker-compose.yml`
@@ -85,7 +85,7 @@ docker run -d -p 3000:3000 \
   -e SMTP_PORT=465 \
   -e SMTP_USER=tu-email@gmail.com \
   -e SMTP_PASS=tu-contraseña \
-  -e CONTACT_EMAIL=contacto@riberdigital.es \
+  -e CONTACT_EMAIL=contacto@ribersistemas.es \
   --name riber-digital-web riber-digital-web
 ```
 

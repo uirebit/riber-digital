@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Blog | Digitalización y Automatización para PYMEs - Riberdigital",
+  title: "Blog | Digitalización y Automatización para PYMEs - ribersistemas",
   description: "Artículos prácticos sobre automatización, digitalización e inteligencia artificial para PYMEs españolas. Guías reales para optimizar tu negocio.",
   keywords: [
     "blog digitalización empresas",
@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     "blog consultoría digital España",
   ],
   alternates: {
-    canonical: 'https://www.riberdigital.es/blog',
+    canonical: 'https://www.ribersistemas.es/blog',
   },
   openGraph: {
-    title: "Blog de Consultoría Digital | Riberdigital",
+    title: "Blog de Consultoría Digital | ribersistemas",
     description: "Guías prácticas sobre automatización, digitalización e IA para PYMEs en España.",
-    url: 'https://www.riberdigital.es/blog',
+    url: 'https://www.ribersistemas.es/blog',
     type: 'website',
-    siteName: 'Riberdigital',
+    siteName: 'ribersistemas',
   },
 }
 
@@ -43,23 +43,23 @@ const blogPosts = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "name": "Blog Riberdigital",
+  "name": "Blog ribersistemas",
   "description": "Artículos prácticos sobre automatización, digitalización e inteligencia artificial para PYMEs españolas.",
-  "url": "https://www.riberdigital.es/blog",
+  "url": "https://www.ribersistemas.es/blog",
   "publisher": {
     "@type": "Organization",
-    "name": "Riberdigital",
-    "url": "https://www.riberdigital.es",
+    "name": "ribersistemas",
+    "url": "https://www.ribersistemas.es",
   },
   "blogPost": blogPosts.map((post) => ({
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.excerpt,
     "datePublished": post.dateISO,
-    "url": `https://www.riberdigital.es/blog/${post.slug}`,
+    "url": `https://www.ribersistemas.es/blog/${post.slug}`,
     "author": {
       "@type": "Organization",
-      "name": "Riberdigital",
+      "name": "ribersistemas",
     },
   })),
 }
