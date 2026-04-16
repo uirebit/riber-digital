@@ -5,7 +5,7 @@ export function Footer() {
     <footer
       className="py-8"
       style={{
-        backgroundColor: "#05070c",
+        backgroundColor: "#0a0f1a",
         borderTop: "0.5px solid rgba(232, 234, 237, 0.15)",
       }}
     >
@@ -22,17 +22,17 @@ export function Footer() {
               href="https://www.linkedin.com/in/andrei-tiberiu-david/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors hover:text-[#e8eaed]"
+              className="transition-colors hover:text-[#e6edf7]"
             >
               LinkedIn
             </a>
             <a
               href="mailto:contacto@ribersistemas.es"
-              className="transition-colors hover:text-[#e8eaed]"
+              className="transition-colors hover:text-[#e6edf7]"
             >
               contacto@ribersistemas.es
             </a>
-            <Link href="/privacidad" className="transition-colors hover:text-[#e8eaed]">
+            <Link href="/privacidad" className="transition-colors hover:text-[#e6edf7]">
               Privacidad
             </Link>
           </div>

@@ -35,7 +35,7 @@ export function Navigation() {
           <Link
             href="/"
             className="text-base font-medium transition-opacity hover:opacity-80"
-            style={{ color: "#e8eaed", letterSpacing: "-0.02em" }}
+            style={{ color: "#e6edf7", letterSpacing: "-0.02em" }}
           >
             ribersistemas
           </Link>
@@ -46,7 +46,7 @@ export function Navigation() {
               <Link
                 key={href}
                 href={href}
-                className="text-sm transition-colors hover:text-[#e8eaed]"
+                className="text-sm transition-colors hover:text-[#e6edf7]"
                 style={{ color: "rgba(232, 234, 237, 0.68)" }}
               >
                 {label}
@@ -55,14 +55,14 @@ export function Navigation() {
             <Link
               href="/blog"
               className="px-5 py-2 rounded-full text-sm font-medium transition-opacity hover:opacity-90"
-              style={{ backgroundColor: "#ffffff", color: "#0b1220" }}
+              style={{ backgroundColor: "#ffffff", color: "#121a2b" }}
             >
               Blog
             </Link>
             <Link
               href="/contacto"
               className="px-5 py-2 rounded-full text-sm font-medium transition-opacity hover:opacity-90"
-              style={{ backgroundColor: "#ffffff", color: "#0b1220" }}
+              style={{ backgroundColor: "#ffffff", color: "#121a2b" }}
             >
               Contacto
             </Link>
@@ -73,7 +73,7 @@ export function Navigation() {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden transition-opacity hover:opacity-70"
             aria-label="Toggle menu"
-            style={{ color: "#e8eaed" }}
+            style={{ color: "#e6edf7" }}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -89,7 +89,7 @@ export function Navigation() {
               <Link
                 key={href}
                 href={href}
-                className="block text-sm py-1 transition-colors hover:text-[#e8eaed]"
+                className="block text-sm py-1 transition-colors hover:text-[#e6edf7]"
                 style={{ color: "rgba(232, 234, 237, 0.68)" }}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -99,7 +99,7 @@ export function Navigation() {
             <Link
               href="/blog"
               className="inline-block mt-2 px-5 py-2 rounded-full text-sm font-medium"
-              style={{ backgroundColor: "#ffffff", color: "#0b1220" }}
+              style={{ backgroundColor: "#ffffff", color: "#121a2b" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
@@ -107,7 +107,7 @@ export function Navigation() {
             <Link
               href="/contacto"
               className="inline-block mt-2 px-5 py-2 rounded-full text-sm font-medium"
-              style={{ backgroundColor: "#ffffff", color: "#0b1220" }}
+              style={{ backgroundColor: "#ffffff", color: "#121a2b" }}
               onClick={() => setMobileMenuOpen(false)}
             >
               Contacto

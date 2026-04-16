@@ -5,42 +5,42 @@
 
 :root {
   /* ribersistemas dark theme */
-  --background: #05070c;
-  --foreground: #e8eaed;
-  --card: #141d30;
-  --card-foreground: #e8eaed;
-  --popover: #141d30;
-  --popover-foreground: #e8eaed;
-  --primary: #0b1220;
-  --primary-foreground: #e8eaed;
-  --secondary: #141d30;
-  --secondary-foreground: #e8eaed;
-  --muted: #141d30;
-  --muted-foreground: rgba(232, 234, 237, 0.68);
+  --background: #0a0f1a;
+  --foreground: #e6edf7;
+  --card: #1c2740;
+  --card-foreground: #e6edf7;
+  --popover: #1c2740;
+  --popover-foreground: #e6edf7;
+  --primary: #121a2b;
+  --primary-foreground: #e6edf7;
+  --secondary: #1c2740;
+  --secondary-foreground: #e6edf7;
+  --muted: #1c2740;
+  --muted-foreground: #9fb0c8;
   --accent: #ffffff;
-  --accent-foreground: #0b1220;
+  --accent-foreground: #121a2b;
   --destructive: #ef4444;
-  --destructive-foreground: #e8eaed;
-  --border: rgba(232, 234, 237, 0.15);
-  --input: rgba(232, 234, 237, 0.15);
-  --ring: rgba(232, 234, 237, 0.5);
+  --destructive-foreground: #e6edf7;
+  --border: #26324a;
+  --input: #26324a;
+  --ring: rgba(230, 237, 247, 0.5);
   --radius: 0.5rem;
-  --sidebar: #0b1220;
-  --sidebar-foreground: #e8eaed;
-  --sidebar-primary: #e8eaed;
-  --sidebar-primary-foreground: #0b1220;
-  --sidebar-accent: #141d30;
-  --sidebar-accent-foreground: #e8eaed;
-  --sidebar-border: rgba(232, 234, 237, 0.15);
-  --sidebar-ring: rgba(232, 234, 237, 0.5);
+  --sidebar: #121a2b;
+  --sidebar-foreground: #e6edf7;
+  --sidebar-primary: #e6edf7;
+  --sidebar-primary-foreground: #121a2b;
+  --sidebar-accent: #1c2740;
+  --sidebar-accent-foreground: #e6edf7;
+  --sidebar-border: #26324a;
+  --sidebar-ring: rgba(230, 237, 247, 0.5);
 
   /* ribersistemas design tokens */
-  --rs-text-secondary: rgba(232, 234, 237, 0.68);
-  --rs-text-muted: rgba(232, 234, 237, 0.4);
-  --rs-text-hero-italic: rgba(232, 234, 237, 0.38);
-  --rs-border: rgba(232, 234, 237, 0.15);
-  --rs-surface: #0b1220;
-  --rs-card: #141d30;
+  --rs-text-secondary: #9fb0c8;
+  --rs-text-muted: rgba(159, 176, 200, 0.7);
+  --rs-text-hero-italic: rgba(230, 237, 247, 0.38);
+  --rs-border: #26324a;
+  --rs-surface: #121a2b;
+  --rs-card: #1c2740;
 }
 
 @theme inline {
@@ -85,7 +85,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: radial-gradient(circle, rgba(232, 234, 237, 0.09) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(230, 237, 247, 0.09) 1px, transparent 1px);
     background-size: 22px 22px;
   }
 

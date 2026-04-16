@@ -23,13 +23,13 @@ export const metadata: Metadata = {
 
 // ─── Shared style helpers ────────────────────────────────────────────────────
 
-const TEXT_PRIMARY = { color: "#e8eaed" } as const
-const TEXT_SECONDARY = { color: "rgba(232, 234, 237, 0.68)" } as const
-const TEXT_MUTED = { color: "rgba(232, 234, 237, 0.4)" } as const
-const BORDER_SUBTLE = { border: "0.5px solid rgba(232, 234, 237, 0.15)" } as const
+const TEXT_PRIMARY = { color: "#e6edf7" } as const
+const TEXT_SECONDARY = { color: "#9fb0c8" } as const
+const TEXT_MUTED = { color: "rgba(159, 176, 200, 0.7)" } as const
+const BORDER_SUBTLE = { border: "0.5px solid #26324a" } as const
 const CARD_STYLE = {
-  backgroundColor: "#141d30",
-  border: "0.5px solid rgba(232, 234, 237, 0.15)",
+  backgroundColor: "#1c2740",
+  border: "0.5px solid #26324a",
   borderRadius: "10px",
 } as const
 
@@ -44,7 +44,7 @@ export default function HomePage() {
         {/* ── 1. HERO ─────────────────────────────────────────────────────── */}
         <section
           className="min-h-[90vh] flex items-center"
-          style={{ backgroundColor: "#0b1220" }}
+          style={{ backgroundColor: "#121a2b" }}
         >
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center w-full">
             <h1
@@ -60,7 +60,7 @@ export default function HomePage() {
               <span
                 className="block text-[32px] sm:text-[44px] lg:text-[52px]"
                 style={{
-                  color: "rgba(232, 234, 237, 0.38)",
+                  color: "rgba(230, 237, 247, 0.38)",
                   fontStyle: "italic",
                   fontWeight: 400,
                 }}
@@ -87,16 +87,16 @@ export default function HomePage() {
               <Link
                 href="/contacto"
                 className="inline-flex items-center justify-center px-7 py-3 rounded-full text-sm font-medium transition-opacity hover:opacity-90"
-                style={{ backgroundColor: "#ffffff", color: "#0b1220" }}
+                style={{ backgroundColor: "#ffffff", color: "#121a2b" }}
               >
                 Cuéntame tu problema →
               </Link>
               <a
                 href="#casos"
-                className="inline-flex items-center justify-center px-7 py-3 rounded-full text-sm font-medium transition-colors hover:text-[#e8eaed]"
+                className="inline-flex items-center justify-center px-7 py-3 rounded-full text-sm font-medium transition-colors hover:text-[#e6edf7]"
                 style={{
                   ...BORDER_SUBTLE,
-                  color: "rgba(232, 234, 237, 0.68)",
+                  color: "#9fb0c8",
                 }}
               >
                 Ver casos reales
@@ -235,7 +235,7 @@ export default function HomePage() {
                 </div>
                 <div
                   className="pt-5 flex flex-col gap-4"
-                  style={{ borderTop: "0.5px solid rgba(232, 234, 237, 0.15)" }}
+                  style={{ borderTop: "0.5px solid #26324a" }}
                 >
                   <div>
                     <p
@@ -298,7 +298,7 @@ export default function HomePage() {
                 </div>
                 <div
                   className="pt-5 flex flex-col gap-4"
-                  style={{ borderTop: "0.5px solid rgba(232, 234, 237, 0.15)" }}
+                  style={{ borderTop: "0.5px solid #26324a" }}
                 >
                   <div>
                     <p
@@ -363,7 +363,7 @@ export default function HomePage() {
                 </div>
                 <div
                   className="pt-5 flex flex-col gap-4"
-                  style={{ borderTop: "0.5px solid rgba(232, 234, 237, 0.15)" }}
+                  style={{ borderTop: "0.5px solid #26324a" }}
                 >
                   <div>
                     <p
@@ -412,7 +412,7 @@ export default function HomePage() {
         <section
           id="sobre-mi"
           className="py-20 px-4 sm:px-6 lg:px-8"
-          style={{ backgroundColor: "#0b1220" }}
+          style={{ backgroundColor: "#121a2b" }}
         >
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -421,7 +421,7 @@ export default function HomePage() {
               <div className="flex justify-center lg:justify-end">
                 <div
                   className="w-64 h-64 lg:w-72 lg:h-72 rounded-[10px] overflow-hidden flex items-center justify-center"
-                  style={{ backgroundColor: "#141d30", ...BORDER_SUBTLE }}
+                  style={{ backgroundColor: "#1c2740", ...BORDER_SUBTLE }}
                 >
                   <Image
                     src="/founder.png"
@@ -459,7 +459,7 @@ export default function HomePage() {
         {/* ── 6. CTA FINAL ────────────────────────────────────────────────── */}
         <section
           className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 text-center"
-          style={{ backgroundColor: "#0b1220" }}
+          style={{ backgroundColor: "#121a2b" }}
         >
           <div className="max-w-2xl mx-auto">
             <h2
@@ -474,7 +474,7 @@ export default function HomePage() {
             <Link
               href="/contacto"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-medium transition-opacity hover:opacity-90"
-              style={{ backgroundColor: "#ffffff", color: "#0b1220" }}
+              style={{ backgroundColor: "#ffffff", color: "#121a2b" }}
             >
               Cuéntame tu problema →
             </Link>

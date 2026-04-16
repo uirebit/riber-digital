@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'Software e IA a medida para resolver problemas operativos de PYMEs',
     start_url: '/',
     display: 'standalone',
-    background_color: '#05070c',
-    theme_color: '#0b1220',
+    background_color: '#0a0f1a',
+    theme_color: '#121a2b',
     icons: [
       {
         src: '/favicon-96x96.png',
