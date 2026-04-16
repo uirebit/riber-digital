@@ -53,6 +53,13 @@ export function Navigation() {
               </Link>
             ))}
             <Link
+              href="/blog"
+              className="px-5 py-2 rounded-full text-sm font-medium transition-opacity hover:opacity-90"
+              style={{ backgroundColor: "#ffffff", color: "#0b1220" }}
+            >
+              Blog
+            </Link>
+            <Link
               href="/contacto"
               className="px-5 py-2 rounded-full text-sm font-medium transition-opacity hover:opacity-90"
               style={{ backgroundColor: "#ffffff", color: "#0b1220" }}
@@ -89,6 +96,14 @@ export function Navigation() {
                 {label}
               </Link>
             ))}
+            <Link
+              href="/blog"
+              className="inline-block mt-2 px-5 py-2 rounded-full text-sm font-medium"
+              style={{ backgroundColor: "#ffffff", color: "#0b1220" }}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Blog
+            </Link>
             <Link
               href="/contacto"
               className="inline-block mt-2 px-5 py-2 rounded-full text-sm font-medium"

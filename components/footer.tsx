@@ -26,12 +26,11 @@ export function Footer() {
             >
               LinkedIn
             </a>
-            {/* TODO: rellenar por Tiberiu antes del deploy — sustituir href y texto */}
             <a
-              href="mailto:[PENDIENTE]"
+              href="mailto:contacto@ribersistemas.es"
               className="transition-colors hover:text-[#e8eaed]"
             >
-              [email@pendiente.es]
+              contacto@ribersistemas.es
             </a>
             <Link href="/privacidad" className="transition-colors hover:text-[#e8eaed]">
               Privacidad
