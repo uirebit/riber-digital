@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Servicios de Consultoría Digital para PYMEs | ribersistemas",
     description:
       "Automatización, digitalización, IA y desarrollo a medida para empresas españolas. Soluciones prácticas con resultados medibles.",
-    url: 'https://www.ribersistemas.es/servicios',
+    url: 'https://ribersistemas.es/servicios',
   },
 }
 

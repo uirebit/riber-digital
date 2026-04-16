@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const baseUrl = 'https://www.ribersistemas.es'
+const baseUrl = 'https://ribersistemas.es'
 
 // Add new blog posts here as they are published
 const blogPosts = [

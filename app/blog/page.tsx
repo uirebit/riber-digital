@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     "blog consultoría digital España",
   ],
   alternates: {
-    canonical: 'https://www.ribersistemas.es/blog',
+    canonical: 'https://ribersistemas.es/blog',
   },
   openGraph: {
     title: "Blog de Consultoría Digital | ribersistemas",
     description: "Guías prácticas sobre automatización, digitalización e IA para PYMEs en España.",
-    url: 'https://www.ribersistemas.es/blog',
+    url: 'https://ribersistemas.es/blog',
     type: 'website',
     siteName: 'ribersistemas',
   },
@@ -45,18 +45,18 @@ const jsonLd = {
   "@type": "Blog",
   "name": "Blog ribersistemas",
   "description": "Artículos prácticos sobre automatización, digitalización e inteligencia artificial para PYMEs españolas.",
-  "url": "https://www.ribersistemas.es/blog",
+  "url": "https://ribersistemas.es/blog",
   "publisher": {
     "@type": "Organization",
     "name": "ribersistemas",
-    "url": "https://www.ribersistemas.es",
+    "url": "https://ribersistemas.es",
   },
   "blogPost": blogPosts.map((post) => ({
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.excerpt,
     "datePublished": post.dateISO,
-    "url": `https://www.ribersistemas.es/blog/${post.slug}`,
+    "url": `https://ribersistemas.es/blog/${post.slug}`,
     "author": {
       "@type": "Organization",
       "name": "ribersistemas",

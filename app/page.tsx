@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "ribersistemas | Consultor técnico independiente para PYMEs",
     description:
       "Resuelvo problemas de operaciones, ventas y marketing construyendo software e IA a medida. Sin agencias, sin subcontratas, sin PowerPoints.",
-    url: "https://www.ribersistemas.es",
+    url: "https://ribersistemas.es",
   },
 }
 

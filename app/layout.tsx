@@ -12,7 +12,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.ribersistemas.es'),
+  metadataBase: new URL('https://ribersistemas.es'),
   title: {
     default: "ribersistemas | Consultor técnico independiente para PYMEs",
     template: "%s | ribersistemas",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "Resuelvo problemas de operaciones, ventas y marketing construyendo software e IA a medida. Sin agencias, sin subcontratas, sin PowerPoints.",
     type: "website",
     locale: "es_ES",
-    url: 'https://www.ribersistemas.es',
+    url: 'https://ribersistemas.es',
   },
   icons: {
     icon: [

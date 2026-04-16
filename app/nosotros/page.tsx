@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Quiénes Somos | ribersistemas",
     description:
       "Tu socio en transformación digital. Ayudamos a PYMEs españolas a automatizar procesos y crecer de forma sostenible.",
-    url: 'https://www.ribersistemas.es/nosotros',
+    url: 'https://ribersistemas.es/nosotros',
   },
 }
 

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contacta con ribersistemas",
     description: "Asesoría gratuita para digitalizar y automatizar tu PYME. Respuesta en 24 horas.",
-    url: 'https://www.ribersistemas.es/contacto',
+    url: 'https://ribersistemas.es/contacto',
   },
 }
 

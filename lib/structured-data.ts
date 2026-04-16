@@ -7,8 +7,8 @@ export function generateOrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'ribersistemas',
-    url: 'https://www.ribersistemas.es',
-    logo: 'https://www.ribersistemas.es/riberdigital-logo.png',
+    url: 'https://ribersistemas.es',
+    logo: 'https://ribersistemas.es/riberdigital-logo.png',
     description: 'Consultor técnico independiente especializado en software e IA a medida para PYMEs',
     address: {
       '@type': 'PostalAddress',
@@ -34,7 +34,7 @@ export function generateFounderSchema() {
     '@type': 'Person',
     name: 'Tiberiu David',
     jobTitle: 'Consultor Técnico Independiente',
-    url: 'https://www.ribersistemas.es/nosotros',
+    url: 'https://ribersistemas.es/nosotros',
     sameAs: [LINKEDIN_PERSONAL],
     worksFor: {
       '@type': 'Organization',
@@ -69,7 +69,7 @@ export function generateServiceSchema() {
     '@type': 'ProfessionalService',
     name: 'ribersistemas - Consultor Técnico Independiente',
     description: 'Software e IA a medida para resolver problemas operativos de PYMEs',
-    url: 'https://www.ribersistemas.es',
+    url: 'https://ribersistemas.es',
     priceRange: '$$',
     areaServed: {
       '@type': 'Country',
