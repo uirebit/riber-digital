@@ -15,16 +15,16 @@ const nextConfig = {
   
   async redirects() {
     return [
-      // Redirigir de no-www a www
+      // Redirigir de www a no-www
       {
         source: '/:path*',
         has: [
           {
             type: 'host',
-            value: 'ribersistemas.es',
+            value: 'www.ribersistemas.es',
           },
         ],
-        destination: 'https://www.ribersistemas.es/:path*',
+        destination: 'https://ribersistemas.es/:path*',
         permanent: true,
         statusCode: 301,
       },
@@ -37,7 +37,7 @@ const nextConfig = {
             value: 'riberdigital.es',
           },
         ],
-        destination: 'https://www.ribersistemas.es/:path*',
+        destination: 'https://ribersistemas.es/:path*',
         permanent: true,
         statusCode: 301,
       },
@@ -49,7 +49,7 @@ const nextConfig = {
             value: 'www.riberdigital.es',
           },
         ],
-        destination: 'https://www.ribersistemas.es/:path*',
+        destination: 'https://ribersistemas.es/:path*',
         permanent: true,
         statusCode: 301,
       },
