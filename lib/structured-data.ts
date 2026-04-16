@@ -34,7 +34,7 @@ export function generateFounderSchema() {
     '@type': 'Person',
     name: 'Tiberiu David',
     jobTitle: 'Consultor Técnico Independiente',
-    url: 'https://ribersistemas.es/nosotros',
+    url: 'https://ribersistemas.es',
     sameAs: [LINKEDIN_PERSONAL],
     worksFor: {
       '@type': 'Organization',
